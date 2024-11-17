@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>C Programming Quiz</h1>
+        <div class="quiz-box">
+            <div id="question-box">
+                <p id="question">What is the size of a pointer in C?</p>
+            </div>
+            <!-- Multiple Choice -->
+            <div id="options">
+                <label>
+                    <input type="radio" name="answer" value="A"> 4 bytes
+                </label><br>
+                <label>
+                    <input type="radio" name="answer" value="B"> 8 bytes
+                </label><br>
+                <label>
+                    <input type="radio" name="answer" value="C"> Dependent on system architecture
+                </label><br>
+                <label>
+                    <input type="radio" name="answer" value="D"> 16 bytes
+                </label><br>
+            </div>
+            <!-- Fill in the Blank -->
+            <div id="fill-in-the-blank" style="display:none;">
+                <label for="blank-answer">Fill in the blank: In C, the function used to print is ____________</label>
+                <input type="text" id="blank-answer" name="blank-answer">
+            </div>
+            <!-- True/False -->
+            <div id="true-false" style="display:none;">
+                <label>
+                    <input type="radio" name="answer" value="true"> True
+                </label><br>
+                <label>
+                    <input type="radio" name="answer" value="false"> False
+                </label><br>
+            </div>
+            <div class="buttons">
+                <button onclick="nextQuestion()">Next</button>
+                <button onclick="submitQuiz()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
